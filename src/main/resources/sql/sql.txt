@@ -1,0 +1,13 @@
+DROP TABLE IF EXISTS `tms_login`;
+
+CREATE TABLE `tms_login` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `username` VARCHAR(20) NOT NULL,
+  `password` VARCHAR(20) NOT NULL,
+  `version`  int(8),
+  `create_date` TIMESTAMP,
+  `create_user` VARCHAR(20),
+  `update_date` TIMESTAMP,
+  `update_user` VARCHAR(20),
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
